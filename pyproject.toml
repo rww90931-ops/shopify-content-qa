@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shopify-content-qa"
+version = "0.1.0"
+description = "Offline QA checks for Shopify HTML content exports"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{name = "EWIGSC"}]
+keywords = ["shopify", "seo", "content", "qa", "accessibility"]
+
+[project.scripts]
+shopify-content-qa = "shopify_content_qa.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["shopify_content_qa*"]
+
+
